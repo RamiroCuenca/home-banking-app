@@ -1,4 +1,4 @@
-# home_banking
+# Home Banking App
 
 A new Flutter project.
 
