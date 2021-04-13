@@ -1,1 +1,1 @@
-export 'bottom_navigation_bar.dart';
+export 'shared/bottom_navigation_bar.dart';
