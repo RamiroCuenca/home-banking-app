@@ -9,7 +9,11 @@ Widget getTopCard() {
     padding: kPadding,
     decoration: BoxDecoration(
       color: Colors.white,
-      borderRadius: BorderRadius.circular(40),
+      // borderRadius: BorderRadius.circular(40),
+      borderRadius: BorderRadius.only(
+        bottomLeft: Radius.circular(40.0),
+        bottomRight: Radius.circular(40.0),
+      ),
     ),
     child: SafeArea(
       child: Column(
