@@ -13,36 +13,9 @@ class MainPage extends StatelessWidget {
       backgroundColor: kGrey,
       body: Column(
         children: <Widget>[
-          // PageView in order to able scrolling
-          Container(
-            width: double.infinity,
-            height: 200.0,
-            padding: kPadding,
-            decoration: BoxDecoration(color: Colors.white),
-            child: SafeArea(
-              child: Column(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      CircleAvatar(
-                        backgroundColor: kMainColor,
-                        radius: 20.0,
-                      ),
-                      IconButton(
-                        icon: Icon(
-                          Icons.notifications,
-                          size: 40.0,
-                          color: kDarkGrey,
-                        ),
-                        onPressed: () {},
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
+          // TopCard
+          getTopCard(),
+          getMonthlyPromotion(),
         ],
       ),
       bottomNavigationBar: getBottomNavitagionBar(),
