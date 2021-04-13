@@ -16,6 +16,7 @@ class MainPage extends StatelessWidget {
           // TopCard
           getTopCard(),
           getMonthlyPromotion(),
+          getTodayActions(),
         ],
       ),
       bottomNavigationBar: getBottomNavitagionBar(),
