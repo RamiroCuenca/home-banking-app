@@ -6,4 +6,5 @@ final kDarkGrey = Color.fromRGBO(70, 70, 70, 1.0);
 final kMainColor = Color.fromRGBO(246, 121, 46, 1.0);
 
 // Padding
-final kPadding = EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0);
+final kmargin = EdgeInsets.symmetric(vertical: 20.0, horizontal: 25.0);
+final kPadding = EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0);
