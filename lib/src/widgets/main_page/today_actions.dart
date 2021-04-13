@@ -20,40 +20,42 @@ Widget getTodayActions() {
         SizedBox(
           height: 15.0,
         ),
-        PageView(
-          scrollDirection: Axis.horizontal,
-          children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
             _getActionCard('man', 'Send', 'Money'),
             _getActionCard('message', 'Ask for', 'Money'),
             _getActionCard('qr', 'Pay with', 'QR'),
-            _getActionCard('money', 'Extract', 'Cash'),
+            _getActionCard('cash', 'Extract', 'Cash'),
             _getActionCard('signal', 'Pay', 'Wireless'),
           ],
-        ),
+        )
       ],
     ),
   );
 }
 
 Widget _getActionCard(svg, messageA, messageB) {
-  return Column(
-    children: <Widget>[
-      Container(
-        padding: EdgeInsets.all(20.0),
-        decoration: BoxDecoration(
-            color: Colors.white,
-            border: Border.all(
-              color: kGrey,
-              width: 4,
-            ),
-            borderRadius: BorderRadius.circular(15.0)),
-        child: SvgPicture.asset('assets/svg/$svg.svg'),
-      ),
-      SizedBox(
-        height: 10.0,
-      ),
-      Text(messageA, style: TextStyle(fontSize: 15)),
-      Text(messageB, style: TextStyle(fontSize: 15)),
-    ],
+  return Container(
+    child: Column(
+      children: <Widget>[
+        Container(
+          padding: EdgeInsets.all(15.0),
+          decoration: BoxDecoration(
+              color: Colors.white,
+              border: Border.all(
+                color: kGrey,
+                width: 4,
+              ),
+              borderRadius: BorderRadius.circular(15.0)),
+          child: SvgPicture.asset('assets/svg/$svg.svg'),
+        ),
+        SizedBox(
+          height: 10.0,
+        ),
+        Text(messageA, style: TextStyle(fontSize: 13)),
+        Text(messageB, style: TextStyle(fontSize: 13)),
+      ],
+    ),
   );
 }
