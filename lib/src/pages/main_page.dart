@@ -11,13 +11,16 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kGrey,
-      body: Column(
-        children: <Widget>[
-          // TopCard
-          getTopCard(),
-          getMonthlyPromotion(),
-          getTodayActions(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            // TopCard
+            getTopCard(),
+            getMonthlyPromotion(),
+            getTodayActions(),
+            getMainActions(),
+          ],
+        ),
       ),
       bottomNavigationBar: getBottomNavitagionBar(),
     );
