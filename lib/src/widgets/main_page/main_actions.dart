@@ -36,7 +36,7 @@ Widget _getAction(svg, action) {
             decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: kDarkGrey,
+                  color: kLightGrey,
                   width: 1,
                 ),
               ),
@@ -51,7 +51,7 @@ Widget _getAction(svg, action) {
                 Icon(
                   Icons.chevron_right,
                   size: 30.0,
-                  color: kDarkGrey,
+                  color: kLightGrey,
                 )
               ],
             )),
