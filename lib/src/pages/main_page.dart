@@ -19,6 +19,7 @@ class MainPage extends StatelessWidget {
             getMonthlyPromotion(),
             getTodayActions(),
             getMainActions(),
+            getSuggestions(context),
           ],
         ),
       ),
