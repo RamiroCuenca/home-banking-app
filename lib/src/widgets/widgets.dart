@@ -7,3 +7,4 @@ export 'main_page/monthly_promotion_widget.dart';
 export 'main_page/today_actions.dart';
 export 'main_page/main_actions.dart';
 export 'main_page/suggestions.dart';
+export 'main_page/log_out.dart';

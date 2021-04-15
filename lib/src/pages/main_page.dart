@@ -20,6 +20,7 @@ class MainPage extends StatelessWidget {
             getTodayActions(),
             getMainActions(),
             getSuggestions(context),
+            getLogOut(),
           ],
         ),
       ),
